@@ -6,10 +6,9 @@ import (
 )
 
 func SetupProvider(a *fiber.App) {
-	// Dependencies Injection
+	// Dependencies tradingclient Injection
 	injection := router.CallDependenciesInjection()
 
 	// Routes.
 	router.SetupRoutes(a, injection)
 }
- 
