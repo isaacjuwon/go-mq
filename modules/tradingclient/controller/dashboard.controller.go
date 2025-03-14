@@ -21,8 +21,8 @@ func NewDashboardController(userService user.UserService) DashboardController {
 	}
 }
 
-func (ctrl *indexController) Login(c *fiber.Ctx) error {
+func (ctrl *dashboardController) Index(c *fiber.Ctx) error {
 
-	return response.SuccessDataResponse(c, fiber.StatusOK,
-		token, "Login successful")
+	return response.SuccessResponse(c, fiber.StatusOK,
+		"Dashboard fetch successful")
 }
